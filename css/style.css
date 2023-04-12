@@ -27,8 +27,7 @@ body .app {
 body .app .title {
   font-weight: lighter;
 }
-body .app .subtitle,
-body .app .history {
+body .app .subtitle {
   font-size: 16px;
   color: rgb(190, 210, 197);
   text-align: center;
@@ -48,14 +47,19 @@ body .app .buttons button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  outline: none;
 }
 body .app .buttons button .sound {
   font-size: 15px;
   color: rgb(250, 75, 6);
 }
 body .app .buttons button.pressed {
-  background-color: rgba(168, 54, 9, 0.993);
-  outline: none;
+  background-color: rgba(155, 50, 9, 0.993);
+  border: 2px solid rgba(155, 50, 9, 0.993);
+}
+body .app .buttons button:hover,
+body .app .buttons button:focus {
+  border: 2px solid rgba(155, 50, 9, 0.993);
 }
 
 @media (min-width: 375px) {

@@ -1,7 +1,6 @@
 @use './reset' as *;
 @use './colors' as colors;
 
-// breakpoints
 $small: 375px;
 $medium: 768px;
 $large: 992px;
@@ -30,8 +29,7 @@ body {
             font-weight: lighter;
         }
 
-        .subtitle, 
-        .history {
+        .subtitle {
             font-size: 16px;
             color: colors.$second-color;
             text-align: center;
@@ -52,6 +50,7 @@ body {
                 border-radius: 5px;
                 cursor: pointer;
                 transition: background-color .3s;
+                outline: none;
                 
                 .sound {
                     font-size: 15px;
@@ -60,15 +59,14 @@ body {
                
                 &.pressed {
                     background-color: colors.$pressed-color;
-                    outline: none;
+                    border: 2px solid colors.$pressed-color;
                 }
             }
             
-            // button:hover,
-            // button:focus {
-            //     background-color: colors.$pressed-color;
-            //     outline: none;
-            // }
+            button:hover,
+            button:focus {
+                border: 2px solid colors.$pressed-color;
+            }
         }
     }
 }
