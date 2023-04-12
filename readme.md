@@ -20,14 +20,13 @@ List features here:
 - Responsive design for mobile, tablet and desktop.
 
 ## Screenshots
-Web version:
+Web version:  
 ![Web version](./assets/screenshots/web_version.jpg)
 
-Tablet version:
-![Tablet version](.//assets/screenshots/tablet_version.jpg)
+Tablet version:  
+![Tablet version](./assets/screenshots/tablet_version.jpg)
 
-
-Mobile version:
+Mobile version:  
 ![Mobile version](./assets/screenshots/mobile_version.jpg)
 
 ## Technologies Used
@@ -67,3 +66,4 @@ This application was built using the following resources:
 
 - Sounds from FreeSound.org
 - Icons from FontAwesome.com
+
