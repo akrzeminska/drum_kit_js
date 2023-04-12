@@ -24,7 +24,7 @@ Web version:
 ![Web version](./assets/screenshots/web_version.jpg)
 
 Tablet version:  
-![Tablet version](./assets/screenshots/tablet_version.jpg)
+![Tablet version](./assets/screenshots/tablet_version2.jpg)
 
 Mobile version:  
 ![Mobile version](./assets/screenshots/mobile_version.jpg)
