@@ -43,7 +43,7 @@ body {
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 25px;
-
+            
             button {           
                 color: #fff;
                 font-size: 20px;
@@ -57,17 +57,18 @@ body {
                     font-size: 15px;
                     color: colors.$first-color;   
                 }
-                .pressed {
-                    box-shadow: 0 3px 4px 0 #DBEDF3;
-                    opacity: 0.5;
-                  }
+               
+                &.pressed {
+                    background-color: colors.$pressed-color;
+                    outline: none;
+                }
             }
             
-            button:hover,
-            button:focus {
-                background-color: colors.$hover-color;
-                outline: none;
-            }
+            // button:hover,
+            // button:focus {
+            //     background-color: colors.$pressed-color;
+            //     outline: none;
+            // }
         }
     }
 }

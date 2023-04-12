@@ -53,13 +53,8 @@ body .app .buttons button .sound {
   font-size: 15px;
   color: rgb(250, 75, 6);
 }
-body .app .buttons button .pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
-}
-body .app .buttons button:hover,
-body .app .buttons button:focus {
-  background-color: rgba(173, 54, 6, 0.993);
+body .app .buttons button.pressed {
+  background-color: rgba(168, 54, 9, 0.993);
   outline: none;
 }
 
