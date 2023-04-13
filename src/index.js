@@ -1,3 +1,15 @@
+import style from "./css/style.css";
+
+import clap from './assets/sounds/clap.wav';
+import hihat from './assets/sounds/hihat.wav';
+import kick from './assets/sounds/kick.wav';
+import openhat from './assets/sounds/openhat.wav';
+import boom from './assets/sounds/boom.wav';
+import ride from './assets/sounds/ride.wav';
+import snare from './assets/sounds/snare.wav';
+import tom from './assets/sounds/tom.wav';
+import tink from './assets/sounds/tink.wav';
+
 let drums = document.querySelectorAll('.drum');
 
 drums.forEach(drum => {
@@ -14,15 +26,15 @@ document.addEventListener('keypress', (event)=> {
 })
 
 const sounds = {
-    w: "assets/sounds/clap.wav",
-    s: "assets/sounds/hihat.wav",
-    d: "assets/sounds/kick.wav",
-    f: "assets/sounds/openhat.wav",
-    g: "assets/sounds/boom.wav",
-    h: "assets/sounds/ride.wav",
-    j: "assets/sounds/snare.wav",
-    k: "assets/sounds/tom.wav",
-    l: "assets/sounds/tink.wav"
+    w: clap,
+    s: hihat,
+    d: kick,
+    f: openhat,
+    g: boom,
+    h: ride,
+    j: snare,
+    k: tom,
+    l: tink
 };
 
 function playSound(key) {
@@ -31,7 +43,7 @@ function playSound(key) {
     audio.play();
 }
 
-function playAnimation (currentKey) {
+export default function playAnimation (currentKey) {
     const animationTime = 250;
     currentKey = currentKey.toLowerCase();
     let activeButton = document.getElementById(currentKey);  
@@ -41,5 +53,3 @@ function playAnimation (currentKey) {
         activeButton.classList.remove("pressed");
     }, animationTime)
 }
-
-module.exports = playAnimation;

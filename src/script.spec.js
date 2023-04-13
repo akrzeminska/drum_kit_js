@@ -1,4 +1,4 @@
-const playAnimation = require('./script');
+import playAnimation from './index';
 
 describe('playAnimation', () => { 
   it('should add "pressed" class to active button', () => {
