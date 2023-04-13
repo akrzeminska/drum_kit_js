@@ -34,10 +34,12 @@ function playSound(key) {
 function playAnimation (currentKey) {
     const animationTime = 250;
     currentKey = currentKey.toLowerCase();
-    let activeButton = document.getElementById(currentKey); 
+    let activeButton = document.getElementById(currentKey);  
     activeButton.classList.add("pressed");
-    
+
     setTimeout(() => {
         activeButton.classList.remove("pressed");
     }, animationTime)
 }
+
+module.exports = playAnimation;
